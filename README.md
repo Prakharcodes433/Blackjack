@@ -1,3 +1,6 @@
+
+![Uploading Screenshot 2026-01-14 084754.png…]()
+
 Overview
 
 This is a text-based or simple UI implementation of the classic casino game, Blackjack (also known as 21). The objective is to beat the dealer's hand without exceeding a total of 21.
