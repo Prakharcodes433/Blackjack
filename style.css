@@ -1,24 +1,11 @@
-h1{
-  color: goldenrod;
-  text-align: center;
-  font-size: 100px;
-  font-family:"Orbitron", sans-serif;
-}
-
-p{
-  text-align: center;
-  font-size: 30px;
-  font-family: "Happy Monkey", system-ui;
-  margin: 10px;
-  font-weight: bold;
-}
-
-body{
-background: radial-gradient(#02682e , #000000 );
+body {
+  background: radial-gradient(#02682e, #000000);
   color: white;
+  margin: 0;
+  min-height: 100vh;
 }
 
-div{
+div {
   margin: 1px auto;
   display: flex;
   align-items: center;
@@ -26,52 +13,67 @@ div{
   padding: 15px;
 }
 
-#start-btn{
-  margin-top: 60px;
-  width: 250px;
-  height: 40px;
+h1 {
+  color: goldenrod;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 45px; 
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-family: "Happy Monkey", system-ui;
+  margin: 10px;
+  font-weight: bold;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+}
+
+#start-btn {
+  margin-top: 40px;
+  width: 220px;
+  height: 50px;
+  font-size: 18px;
   background-color: goldenrod;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: white;
-  border: none;
   margin-bottom: 15px;
-  padding: 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: 6px solid rgb(255, 255, 255);
-display: flex;
-align-items: center;
-justify-content: center;
+  transition: transform 0.1s;
 }
 
-/*
-#new-card-btn{
-  width: 250px;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  height: 40px;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  background-color: goldenrod;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  font-family: Montserrat, sans-serif;
-  border-bottom: 4px solid rgb(255, 255, 255);
+#player-El {
+  margin-top: 25px;
 }
-*/
 
-#start-btn:active, #new-card-btn:active{
-  border-bottom: 6px solid rgb(255, 255, 255);
+#start-btn:active {
   background-color: darkgoldenrod;
+  transform: translateY(2px);
+  border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-#player-El{
-  margin-top:35px;
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 100px;
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  #start-btn {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 60px;
+  }
 }
